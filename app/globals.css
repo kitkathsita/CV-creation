@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Computer Modern';
-  margin: 0 80px;
+  margin: 0 50px;
 }
 
 #name {
@@ -63,3 +63,62 @@ body {
   border-bottom: solid 1px;
   border-color: black;
 }
+
+.description {
+  font-size: 2vh;
+  font-family: 'Computer Modern';
+  margin-left: 10px;
+}
+
+.datePos {
+  font-size: 2vh;
+  font-family: 'Computer Modern';
+  margin: 10px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.posEnter {
+  font-weight: bold;
+}
+
+.loc {
+  font-size: 2vh;
+  font-family: 'Computer Modern';
+  margin-left: 10px;
+}
+
+.idiom {
+  display: flex;
+  margin-left: 10px;
+  font-size: 2vh;
+  font-family: 'Computer Modern';
+}
+
+.language {
+  font-weight: bold;
+  width: 80px;
+}
+
+.addEducation, .groupin{
+  display: flex;
+  margin-left: 10px;
+  font-size: 2vh;
+  font-family: 'Computer Modern';
+}
+
+.year {
+  width: 50px;
+}
+
+.school {
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+.group {
+  width: 150px;
+  font-weight: bold;
+}
+
