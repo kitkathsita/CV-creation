@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+}
+
+body {
+  font-family: 'Computer Modern';
+}
+
+#name {
+  font-size: 4vh;
+  font-family: 'Computer Modern';
+  display: flex;
+  justify-content: center;
+}
+
+.location {
+  display: flex;
+  font-size: 2vh;
+  justify-content: center;
+  gap: 10px;
+}
+
+#loc {
+  font-size: 2vh;
+  font-weight: bold;
+  font-family: 'Computer Modern';
+  display: flex;
+  justify-content: center;
+}
+
+#iconLoc {
+  height: 2vh;
+}
+
+#contactInfo {
+  font-size: 2vh;
+  font-family: 'Computer Modern';
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 2vh;
+}
+
+#contactInfo > div {
+  margin-right: 20px;
+}
+
+.header > div {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#section {
+  font-size: 3vh;
+  font-family: 'Computer Modern';
+  margin: 10px;
+  border-bottom: solid 1px;
+  border-color: black;
+}
