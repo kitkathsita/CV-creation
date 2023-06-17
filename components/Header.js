@@ -1,4 +1,3 @@
-import './page.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faGitHub, faLinkedIn, faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons'
 

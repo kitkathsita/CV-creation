@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "Computer Modern";
   src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
@@ -5,6 +9,7 @@
 
 body {
   font-family: 'Computer Modern';
+  margin: 0 80px;
 }
 
 #name {
