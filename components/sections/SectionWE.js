@@ -1,4 +1,4 @@
-export default function WorkExperience({ position, enterprise, period, jobDescription='', tasks='', place}) {
+function WorkExperience({ position, enterprise, period, jobDescription='', tasks='', place}) {
     return (
         <>
         <PosEnterprise position={position} enterprise={enterprise} period={period}></PosEnterprise>
@@ -26,5 +26,14 @@ function Location({ loc }) {
 function JobDescription({ description }) {
     return (
         <div className='description'>{description}</div>
+    )
+}
+
+export default function SectionWE({sectionName, position, enterprise, period, jobDescription, tasks, place}) {
+    return (
+        <>
+            <div id="section">{sectionName}</div>
+            <WorkExperience position={position} enterprise={enterprise} period={period} jobDescription={jobDescription} tasks={tasks} place={place}></WorkExperience>
+        </>
     )
 }

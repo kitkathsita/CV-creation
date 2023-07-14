@@ -2,12 +2,14 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import Section from '../components/Section';
-import Description from '@/components/Description';
-import WorkExperience from '@/components/WorkExperience';
+import SectionDesc from '@/components/sections/SectionDesc';
+import SectionEduc from '@/components/sections/SectionEduc';
+import SectionLangue from '@/components/sections/SectionLangue';
+import SectionSkill from '@/components/sections/SectionSkill';
+import SectionWE from '@/components/sections/SectionWE';
 import Languages from '@/components/Languages';
-import Education from '@/components/Education';
-import AddButton from '@/components/AddButton';
 import Skills from '@/components/Skills';
+import AddButton from '@/components/AddButton';
 import './globals.css';
 
 const sectionMock = ["PROFILE", 'WORK EXPERIENCE', 'LANGUAGES', 'EDUCATION'];
@@ -50,18 +52,15 @@ export default function Home() {
   return (
     <>
     <Header Name={'Katherin Paola Gómez'} Location={'Bucaramanga, Colombia'} github={'@kitkathsita'} linkedIn={'kitkathsita'} email={'katherinpgr@gmail.com'} cellphone={'+57 3017995846'}></Header>
-    <Section sectionName={'PROFILE'}></Section>
-    <Description profile={desc}></Description>
-    <Section sectionName={'WORK EXPERIENCE'}></Section>
-    <WorkExperience position={'Customer service agent'} enterprise={'Amazon'} period={'Oct 2022 - Dec 2022'} place={'Bucaramanga, Colombia'} jobDescription={jobDesc}></WorkExperience>
+    <SectionDesc sectionName={'PROFILE'} profile={desc}></SectionDesc>
+    <SectionWE sectionName={'WORK EXPERIENCE'} position={'Customer service agent'} enterprise={'Amazon'} period={'Oct 2022 - Dec 2022'} place={'Bucaramanga, Colombia'} jobDescription={jobDesc}></SectionWE>
     <Section sectionName={'LANGUAGES'}></Section>
     {languagesSpoken.map(langua => {
       i++;
       return <Languages key={i} language={langua.language} level={langua.level}></Languages>
     })
     }
-    <Section sectionName={'EDUCATION'}></Section>
-    <Education year={'2023'} degree={'Physics'} school={'Universidad Industrial de Santander'}></Education>
+    <SectionEduc sectionName={'EDUCATION'} year={'2023'} degree={'Physics'} school={'Universidad Industrial de Santander'}></SectionEduc>
     <Section sectionName={'SKILLS'}></Section>
     {skills.map(skill => {
       j++
