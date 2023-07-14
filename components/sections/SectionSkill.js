@@ -7,11 +7,17 @@ function Skills({ group, skills }) {
     )
 }
 
-export default function SectionSkill({sectionName, group, skills }) {
+export default function SectionSkill({sectionName, skills }) {
+    let i = 0
     return (
         <>
             <div id="section">{sectionName}</div>
-            <Skills group={group} skills={skills}></Skills>
+            {
+                skills.map(skill => {
+                    i++;
+                    return <Skills key={i} group={skill.group} skills={skill.skill}></Skills>
+                })
+            }
         </>
     )
 }

@@ -89,6 +89,17 @@ body {
   margin-left: 10px;
 }
 
+.taskJob {
+  font-size: 2vh;
+  font-family: 'Computer Modern';
+  margin-left: 20px;
+  list-style-type: decimal;
+}
+
+li {
+  margin-left: 10px;
+}
+
 .idiom {
   display: flex;
   margin-left: 10px;

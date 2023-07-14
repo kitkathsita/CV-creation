@@ -1,17 +1,18 @@
-function WorkExperience({ position, enterprise, period, jobDescription='', tasks='', place}) {
+function WorkExperience({ position, company, period, jobDescription='', tasks=[], place}) {
     return (
         <>
-        <PosEnterprise position={position} enterprise={enterprise} period={period}></PosEnterprise>
+        <PosEnterprise position={position} company={company} period={period}></PosEnterprise>
         <Location loc={place}></Location>
         <JobDescription description={jobDescription}></JobDescription>
+        <TasksOfJob taskList={tasks}></TasksOfJob>
         </>
     )
 }
 
-function PosEnterprise({ position, enterprise, period }) {
+function PosEnterprise({ position, company, period }) {
     return (
         <div className='datePos'>
-            <div className='posEnter'>{position} - {enterprise}</div>
+            <div className='posEnter'>{position} - {company}</div>
             <div className='date'>{period}</div>
         </div>
     )
@@ -29,11 +30,28 @@ function JobDescription({ description }) {
     )
 }
 
-export default function SectionWE({sectionName, position, enterprise, period, jobDescription, tasks, place}) {
+function TasksOfJob({ taskList }) {
+    return (
+        <ol className="taskJob">
+            {taskList.map(task => {
+                return <li>{task}</li>
+            })
+            }
+        </ol>
+    )
+}
+
+export default function SectionWE({sectionName, role }) {
+    let i = 0
     return (
         <>
             <div id="section">{sectionName}</div>
-            <WorkExperience position={position} enterprise={enterprise} period={period} jobDescription={jobDescription} tasks={tasks} place={place}></WorkExperience>
+            {
+                role.map(job => {
+                    i++
+                    return <WorkExperience position={job.position} company={job.company} period={job.period} jobDescription={job.jobDescription} tasks={job.task} place={job.place}></WorkExperience>
+                })
+            }
         </>
     )
 }

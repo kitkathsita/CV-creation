@@ -16,6 +16,7 @@ const sectionMock = ["PROFILE", 'WORK EXPERIENCE', 'LANGUAGES', 'EDUCATION'];
 
 const desc = "I'm a very passionate person, who loves helping others and learning new things. I like experimenting with new things that can improve my skills in life. I like cooking and baking, and my most recent passion is front-end development. I also like programming, reading and exercising. I'm learning react and next.js, and soon I will be starting a course for C\#."
 const jobDesc = "Take calls from amazon customers and help them solving any issue related to services offered by Amazon. Escalate petitions and issues to managers. "
+const task = ['Help students', 'Inventory of the lab material', 'Support teachers in the experiments', 'Make the different montages for the experiments']
 const languagesSpoken = [
   {
     language: 'Spanish',
@@ -33,7 +34,7 @@ const languagesSpoken = [
 
 const skills = [
   {
-    group:'programming',
+    group: 'programming',
     skill: 'python, fortran, javascript'
   },
   {
@@ -46,27 +47,46 @@ const skills = [
   }
 ]
 
+const experience = [
+  {
+    position: 'Customer service agent',
+    company: 'Amazon',
+    period: 'Oct 2022 - Dec 2022',
+    place: 'Bucaramanga',
+    jobDescription: jobDesc
+  },
+  {
+    position: 'Laboratory assistant',
+    company: 'Universidad Industrial de Santander',
+    period: 'Jul 2022 - Sep 2022',
+    place: 'Bucaramanga',
+    task: task
+  },
+]
+
+const educationDegrees = [
+  {
+    year: '2023',
+    degree: 'Physicist',
+    school: 'Universidad Industrial de Santander'
+  },
+  {
+    year: '2016',
+    degree: 'Administrative Assitance',
+    school: 'SENA'
+  }
+]
+
 export default function Home() {
   let i = 0
-  let j = 0
   return (
     <>
     <Header Name={'Katherin Paola Gómez'} Location={'Bucaramanga, Colombia'} github={'@kitkathsita'} linkedIn={'kitkathsita'} email={'katherinpgr@gmail.com'} cellphone={'+57 3017995846'}></Header>
     <SectionDesc sectionName={'PROFILE'} profile={desc}></SectionDesc>
-    <SectionWE sectionName={'WORK EXPERIENCE'} position={'Customer service agent'} enterprise={'Amazon'} period={'Oct 2022 - Dec 2022'} place={'Bucaramanga, Colombia'} jobDescription={jobDesc}></SectionWE>
-    <Section sectionName={'LANGUAGES'}></Section>
-    {languagesSpoken.map(langua => {
-      i++;
-      return <Languages key={i} language={langua.language} level={langua.level}></Languages>
-    })
-    }
-    <SectionEduc sectionName={'EDUCATION'} year={'2023'} degree={'Physics'} school={'Universidad Industrial de Santander'}></SectionEduc>
-    <Section sectionName={'SKILLS'}></Section>
-    {skills.map(skill => {
-      j++
-      return <Skills key={j} group={skill.group} skills={skill.skill}></Skills>
-    })
-    }
+    <SectionWE sectionName={'WORK EXPERIENCE'} position={'Customer service agent'} role={experience}></SectionWE>
+    <SectionLangue sectionName={'LANGUAGES'} languages={languagesSpoken}></SectionLangue>
+    <SectionEduc sectionName={'EDUCATION'} education={educationDegrees}></SectionEduc>
+    <SectionSkill sectionName={'SKILLS'} skills={skills}></SectionSkill>
     </>
   )
 }

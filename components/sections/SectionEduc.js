@@ -8,11 +8,17 @@ function Education({ year, degree, school }) {
     )
 }
 
-export default function SectionEduc({sectionName, year, degree, school}) {
+export default function SectionEduc({sectionName, education}) {
+    let i = 0
     return (
         <>
             <div id="section">{sectionName}</div>
-            <Education year={year} degree={degree} school={school}></Education>
+            {
+                education.map(degree => {
+                    i++
+                    return <Education year={degree.year} degree={degree.degree} school={degree.school}></Education>
+                })
+            }
         </>
     )
 }

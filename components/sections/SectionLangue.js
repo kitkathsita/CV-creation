@@ -7,11 +7,17 @@ function Languages({ language, level }) {
     )
 }
 
-export default function SectionLangue({ language, level, sectionName }) {
+export default function SectionLangue({ sectionName, languages }) {
+    let i = 0
     return (
         <>
             <div id="section">{sectionName}</div>
-            <Languages language={language} level={level}></Languages>
+            {
+                languages.map(lang => {
+                    i++
+                    return <Languages key={i} language={lang.language} level={lang.level}></Languages>
+                })
+            }
         </>
     )
-}
+}   
