@@ -8,13 +8,16 @@ import Info from '../info.json';
 
 const sectionMock = ["PROFILE", 'WORK EXPERIENCE', 'LANGUAGES', 'EDUCATION', 'SKILLS'];
 
-const name = Info.name
+const { name, lastName, location } = Info
+const { gitHub:github , linkedIn, cellPhoneNumber:cellphone, email } = Info.contactInfo
+
+/*const name = Info.name
 const lastName = Info.lastName
 const location = Info.location
 const github = Info.contactInfo.gitHub
 const linkedIn = Info.contactInfo.linkedIn
 const cellphone = Info.contactInfo.cellPhoneNumber
-const email = Info.contactInfo.email
+const email = Info.contactInfo.email*/
 const desc = Info.profileDescription
 const languagesSpoken = Info.languages
 const skills = Info.skills
@@ -42,7 +45,7 @@ export default function Home() {
       <Header Name={name+' '+lastName} Location={location} github={github} linkedIn={linkedIn} email={email} cellphone={cellphone}></Header>
       {
       sectionMock.map(section => {
-        return <Section section={section}></Section>
+        return <Section section={section} information={Info}></Section>
       })
       }
     </>

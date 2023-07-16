@@ -3,13 +3,18 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "Computer Modern Second";
+  src: url('../public/cmunorm.ttf');
+}
+
+@font-face {
   font-family: "Computer Modern";
-  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+  src: url('../public/cmunrm.ttf');
 }
 
 body {
   font-family: 'Computer Modern';
-  margin: 0 50px;
+  margin: 50px 50px;
 }
 
 #name {
@@ -68,6 +73,7 @@ body {
   font-size: 2vh;
   font-family: 'Computer Modern';
   margin-left: 10px;
+  margin-right: 10px;
   text-align: justify;
 }
 

@@ -3,25 +3,26 @@ import SectionEduc from '@/components/sections/SectionEduc';
 import SectionLangue from '@/components/sections/SectionLangue';
 import SectionSkill from '@/components/sections/SectionSkill';
 import SectionWE from '@/components/sections/SectionWE';
-import Info from '../info.json';
 
-export default function Section({ section }) {
-	const desc = Info.profileDescription
-	const languagesSpoken = Info.languages
-	const skills = Info.skills
-	const experience = Info.workExperience
-	const educationDegrees = Info.education
+export default function Section({ section, information }) {
+	const { profileDescription:desc, languages:languagesSpoken, skills, workExperience:experience, education:educationDegrees } = information
 
-	if (section === 'PROFILE') {
-		return <SectionDesc sectionName={'PROFILE'} profile={desc}></SectionDesc>
-	} else if (section === 'WORK EXPERIENCE') {
-		return <SectionWE sectionName={'WORK EXPERIENCE'} position={'Customer service agent'} role={experience}></SectionWE>
-	} else if (section === 'LANGUAGES') {
-		return <SectionLangue sectionName={'LANGUAGES'} languages={languagesSpoken}></SectionLangue>
-	} else if (section === 'EDUCATION') {
-		return <SectionEduc sectionName={'EDUCATION'} education={educationDegrees}></SectionEduc>
-	} else if (section === 'SKILLS') {
-		return <SectionSkill sectionName={'SKILLS'} skills={skills}></SectionSkill>
+	switch (section) {
+		case 'PROFILE':
+			return <SectionDesc sectionName={'PROFILE'} profile={desc}></SectionDesc>
+			break
+		case 'WORK EXPERIENCE':
+			return <SectionWE sectionName={'WORK EXPERIENCE'} position={'Customer service agent'} role={experience}></SectionWE>
+			break
+		case 'LANGUAGES':
+			return <SectionLangue sectionName={'LANGUAGES'} languages={languagesSpoken}></SectionLangue>
+			break
+		case 'EDUCATION':
+			return <SectionEduc sectionName={'EDUCATION'} education={educationDegrees}></SectionEduc>
+			break 
+		case 'SKILLS':
+			return <SectionSkill sectionName={'SKILLS'} skills={skills}></SectionSkill>
+			break 		
 	}
 }
     
