@@ -1,0 +1,84 @@
+{
+  "id": "200222",
+  "name": "Katherin",
+  "lastName": "Gómez",
+  "location": "Bucaramanga, Colombia",
+  "contactInfo": {
+    "cellPhoneNumber": "+57 3017995846",
+    "gitHub": "@kitkathsita",
+    "linkedIn": "kitkathsita",
+    "email": "katherinpgr_99@hotmail.com"
+  },
+  "workExperience": [
+    {
+      "position": "Customer service agent",
+      "company": "Amazon",
+      "period": "Oct 2022 - Dec 2022",
+      "place": "Bucaramanga",
+      "jobDescription": "Take calls from amazon customers and help them solving any issue related to services offered by Amazon. Escalate petitions and issues to managers. "
+    },
+    {
+      "position": "Laboratory assistant",
+      "company": "Universidad Industrial de Santander",
+      "period": "Jul 2022 - Sep 2022",
+      "place": "Bucaramanga",
+      "task": [
+        "Help students",
+        "Inventory of the lab material",
+        "Support teachers in the experiments",
+        "Make the different montages for the experiments"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "year": "2023",
+      "degree": "Physicist",
+      "school": "Universidad Industrial de Santander"
+    },
+    {
+      "year": "2016",
+      "degree": "Administrative Assitance",
+      "school": "SENA"
+    }
+  ],
+  "skills": [
+    {
+      "group": "programming",
+      "skill": [
+        "python",
+        "fortran",
+        "javascript"
+      ]
+    },
+    {
+      "group": "microsoft",
+      "skill": [
+        "word",
+        "excel",
+        "powerPoint"
+      ]
+    },
+    {
+      "group": "Data Analysis",
+      "skill": [
+        "matplotlib",
+        "pandas"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "C1"
+    },
+    {
+      "language": "French",
+      "level": "A1"
+    }
+  ]
+}

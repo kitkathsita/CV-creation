@@ -7,8 +7,6 @@ import SectionEduc from '@/components/sections/SectionEduc';
 import SectionLangue from '@/components/sections/SectionLangue';
 import SectionSkill from '@/components/sections/SectionSkill';
 import SectionWE from '@/components/sections/SectionWE';
-import Languages from '@/components/Languages';
-import Skills from '@/components/Skills';
 import AddButton from '@/components/AddButton';
 import './globals.css';
 
@@ -61,7 +59,7 @@ const experience = [
     period: 'Jul 2022 - Sep 2022',
     place: 'Bucaramanga',
     task: task
-  },
+  }
 ]
 
 const educationDegrees = [
