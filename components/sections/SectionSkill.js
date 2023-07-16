@@ -2,7 +2,11 @@ function Skills({ group, skills }) {
 	return (
 		<div className="groupin">
 			<div className="group">{group}</div>
-			<div className="skill">{skills}</div>
+			{
+				skills.map(skill_ => {
+					return <div className="skill">{skill_}-</div>
+				})
+			}
 		</div>
 	)
 }

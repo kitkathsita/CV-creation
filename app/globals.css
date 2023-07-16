@@ -68,6 +68,7 @@ body {
   font-size: 2vh;
   font-family: 'Computer Modern';
   margin-left: 10px;
+  text-align: justify;
 }
 
 .datePos {

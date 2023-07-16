@@ -2,80 +2,26 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import Section from '../components/Section';
-import SectionDesc from '@/components/sections/SectionDesc';
-import SectionEduc from '@/components/sections/SectionEduc';
-import SectionLangue from '@/components/sections/SectionLangue';
-import SectionSkill from '@/components/sections/SectionSkill';
-import SectionWE from '@/components/sections/SectionWE';
-import AddButton from '@/components/AddButton';
 import './globals.css';
+import Info from '../info.json';
 
-const sectionMock = ["PROFILE", 'WORK EXPERIENCE', 'LANGUAGES', 'EDUCATION'];
 
-const desc = "I'm a very passionate person, who loves helping others and learning new things. I like experimenting with new things that can improve my skills in life. I like cooking and baking, and my most recent passion is front-end development. I also like programming, reading and exercising. I'm learning react and next.js, and soon I will be starting a course for C\#."
-const jobDesc = "Take calls from amazon customers and help them solving any issue related to services offered by Amazon. Escalate petitions and issues to managers. "
-const task = ['Help students', 'Inventory of the lab material', 'Support teachers in the experiments', 'Make the different montages for the experiments']
-const languagesSpoken = [
-  {
-    language: 'Spanish',
-    level: 'Native'
-  },
-  {
-    language: 'English',
-    level: 'C1'
-  },
-  {
-    language: 'French',
-    level: 'A1'
-  }
-]
+const sectionMock = ["PROFILE", 'WORK EXPERIENCE', 'LANGUAGES', 'EDUCATION', 'SKILLS'];
 
-const skills = [
-  {
-    group: 'programming',
-    skill: 'python, fortran, javascript'
-  },
-  {
-    group:'microsoft',
-    skill: 'word, excel, powerPoint'
-  },
-  {
-    group:'Data Analysis',
-    skill: 'matplotlib, pandas'
-  }
-]
+const name = Info.name
+const lastName = Info.lastName
+const location = Info.location
+const github = Info.contactInfo.gitHub
+const linkedIn = Info.contactInfo.linkedIn
+const cellphone = Info.contactInfo.cellPhoneNumber
+const email = Info.contactInfo.email
+const desc = Info.profileDescription
+const languagesSpoken = Info.languages
+const skills = Info.skills
+const experience = Info.workExperience
+const educationDegrees = Info.education
 
-const experience = [
-  {
-    position: 'Customer service agent',
-    company: 'Amazon',
-    period: 'Oct 2022 - Dec 2022',
-    place: 'Bucaramanga',
-    jobDescription: jobDesc
-  },
-  {
-    position: 'Laboratory assistant',
-    company: 'Universidad Industrial de Santander',
-    period: 'Jul 2022 - Sep 2022',
-    place: 'Bucaramanga',
-    task: task
-  }
-]
-
-const educationDegrees = [
-  {
-    year: '2023',
-    degree: 'Physicist',
-    school: 'Universidad Industrial de Santander'
-  },
-  {
-    year: '2016',
-    degree: 'Administrative Assitance',
-    school: 'SENA'
-  }
-]
-
-export default function Home() {
+/* export default function Home() {
   let i = 0
   return (
     <>
@@ -85,6 +31,20 @@ export default function Home() {
     <SectionLangue sectionName={'LANGUAGES'} languages={languagesSpoken}></SectionLangue>
     <SectionEduc sectionName={'EDUCATION'} education={educationDegrees}></SectionEduc>
     <SectionSkill sectionName={'SKILLS'} skills={skills}></SectionSkill>
+    </>
+  )
+} */
+
+export default function Home() {
+  let i = 0
+  return (
+    <>
+      <Header Name={name+' '+lastName} Location={location} github={github} linkedIn={linkedIn} email={email} cellphone={cellphone}></Header>
+      {
+      sectionMock.map(section => {
+        return <Section section={section}></Section>
+      })
+      }
     </>
   )
 }
