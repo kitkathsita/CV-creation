@@ -14,15 +14,25 @@
 
 body {
   font-family: 'Computer Modern';
-  margin: 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgrey;
 }
 
 #page {
-  height: 1000px;
+  width: 210mm;
+  height: 296mm;
+  background-color: white;
+}
+
+#margin {
+  padding: 10mm;
 }
 
 #name {
-  font-size: 4vh;
+  font-size: 25pt;
   font-family: 'Computer Modern';
   display: flex;
   justify-content: center;
@@ -30,13 +40,13 @@ body {
 
 .location {
   display: flex;
-  font-size: 2vh;
+  font-size: 12pt;
   justify-content: center;
   gap: 10px;
 }
 
 #loc {
-  font-size: 2vh;
+  font-size: 12pt;
   font-weight: bold;
   font-family: 'Computer Modern';
   display: flex;
@@ -44,29 +54,27 @@ body {
 }
 
 .icon {
-  height: 2vh;
+  height: 11pt;
+  width: 11pt;
+  text-align: center;
 }
 
 #contactInfo {
-  font-size: 2vh;
+  font-size: 11pt;
   font-family: 'Computer Modern';
   display: flex;
   justify-content: center;
-  gap: 10px;
-  height: 2vh;
+  gap: 5px;
+  text-align: center;
+  margin-top: 5px;
 }
 
 #contactInfo > div {
   margin-right: 20px;
 }
 
-.header > div {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
 #section {
-  font-size: 3vh;
+  font-size: 15pt;
   font-family: 'Computer Modern';
   margin: 10px;
   border-bottom: solid 1px;
@@ -74,7 +82,7 @@ body {
 }
 
 .description {
-  font-size: 2vh;
+  font-size: 12pt;
   font-family: 'Computer Modern';
   margin-left: 10px;
   margin-right: 10px;
@@ -82,7 +90,7 @@ body {
 }
 
 .datePos {
-  font-size: 2vh;
+  font-size: 12pt;
   font-family: 'Computer Modern';
   margin: 10px;
   margin-bottom: 0px;
@@ -95,13 +103,13 @@ body {
 }
 
 .loc {
-  font-size: 2vh;
+  font-size: 12pt;
   font-family: 'Computer Modern';
   margin-left: 10px;
 }
 
 .taskJob {
-  font-size: 2vh;
+  font-size: 12pt;
   font-family: 'Computer Modern';
   margin-left: 20px;
   list-style-type: decimal;
@@ -114,7 +122,7 @@ li {
 .idiom {
   display: flex;
   margin-left: 10px;
-  font-size: 2vh;
+  font-size: 12pt;
   font-family: 'Computer Modern';
 }
 
@@ -126,7 +134,7 @@ li {
 .addEducation, .groupin{
   display: flex;
   margin-left: 10px;
-  font-size: 2vh;
+  font-size: 12pt;
   font-family: 'Computer Modern';
 }
 

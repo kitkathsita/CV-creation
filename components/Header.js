@@ -14,7 +14,7 @@ export default function Header({ Name, Location, github, linkedIn, email, cellph
 				<div>{github}</div>
 				<BsLinkedin className='icon'></BsLinkedin>
 				<div>{linkedIn}</div>
-				<BsEnvelopeAtFill> className='icon'</BsEnvelopeAtFill>
+				<BsEnvelopeAtFill className='icon'></BsEnvelopeAtFill>
 				<div>{email}</div>
 				<BsTelephoneFill className='icon'></BsTelephoneFill>
 				<div>{cellphone}</div>
