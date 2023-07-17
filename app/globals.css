@@ -17,6 +17,10 @@ body {
   margin: 50px 50px;
 }
 
+#page {
+  height: 1000px;
+}
+
 #name {
   font-size: 4vh;
   font-family: 'Computer Modern';
@@ -39,7 +43,7 @@ body {
   justify-content: center;
 }
 
-#iconLoc {
+.icon {
   height: 2vh;
 }
 

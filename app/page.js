@@ -42,12 +42,14 @@ export default function Home() {
   let i = 0
   return (
     <>
-      <Header Name={name+' '+lastName} Location={location} github={github} linkedIn={linkedIn} email={email} cellphone={cellphone}></Header>
-      {
-      sectionMock.map(section => {
-        return <Section section={section} information={Info}></Section>
-      })
-      }
+      <div id='page'>
+        <Header Name={name+' '+lastName} Location={location} github={github} linkedIn={linkedIn} email={email} cellphone={cellphone}></Header>
+        {
+        sectionMock.map(section => {
+          return <Section section={section} information={Info}></Section>
+        })
+        }
+      </div>  
     </>
   )
 }
