@@ -6,18 +6,28 @@ export default function Header({ Name, Location, github, linkedIn, email, cellph
 		<div className='header'>
 			<div id="name">{Name}</div>
 			<div className='location'>
-				<BsFillGeoFill className='icon'></BsFillGeoFill>
+				<div className='iconContainer'>
+					<BsFillGeoFill className='icon'></BsFillGeoFill>
+				</div>
 				<div id='loc'>{Location}</div>
 			</div>
 			<div id='contactInfo'>
-				<BsGithub className='icon'></BsGithub>
-				<div>{github}</div>
-				<BsLinkedin className='icon'></BsLinkedin>
-				<div>{linkedIn}</div>
-				<BsEnvelopeAtFill className='icon'></BsEnvelopeAtFill>
-				<div>{email}</div>
-				<BsTelephoneFill className='icon'></BsTelephoneFill>
-				<div>{cellphone}</div>
+				<div className='iconContainer'>
+					<BsGithub className='icon'></BsGithub>
+				</div>
+				<div className='infoCont'>{github}</div>
+				<div className='iconContainer'>
+					<BsLinkedin className='icon'></BsLinkedin>	
+				</div>
+				<div className='infoCont'>{linkedIn}</div>
+				<div className='iconContainer'>
+					<BsEnvelopeAtFill className='icon'></BsEnvelopeAtFill>
+				</div>
+				<div className='infoCont'>{email}</div>
+				<div className='iconContainer'>
+					<BsTelephoneFill className='icon'></BsTelephoneFill>
+				</div>
+				<div className='infoCont'>{cellphone}</div>
 			</div>
 		</div>
 	)

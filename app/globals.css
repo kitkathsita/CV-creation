@@ -69,14 +69,20 @@ body {
   margin-top: 5px;
 }
 
-#contactInfo > div {
-  margin-right: 20px;
+#contactInfo > .infoCont {
+  margin-right: 10px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #section {
   font-size: 15pt;
   font-family: 'Computer Modern';
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
   border-bottom: solid 1px;
   border-color: black;
 }
@@ -84,16 +90,14 @@ body {
 .description {
   font-size: 12pt;
   font-family: 'Computer Modern';
-  margin-left: 10px;
-  margin-right: 10px;
   text-align: justify;
 }
 
 .datePos {
   font-size: 12pt;
   font-family: 'Computer Modern';
-  margin: 10px;
-  margin-bottom: 0px;
+  margin-top: 10px;
+  margin: 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -105,7 +109,6 @@ body {
 .loc {
   font-size: 12pt;
   font-family: 'Computer Modern';
-  margin-left: 10px;
 }
 
 .taskJob {
@@ -121,7 +124,6 @@ li {
 
 .idiom {
   display: flex;
-  margin-left: 10px;
   font-size: 12pt;
   font-family: 'Computer Modern';
 }
@@ -133,7 +135,6 @@ li {
 
 .addEducation, .groupin{
   display: flex;
-  margin-left: 10px;
   font-size: 12pt;
   font-family: 'Computer Modern';
 }
