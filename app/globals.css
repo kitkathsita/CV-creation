@@ -19,9 +19,49 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: lightgrey;
+  gap: 20px;
+  margin: 20px;
+}
+
+#bigContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.titlePage {
+  font-family: 'Computer Modern';
+  font-size: 40pt;
+  margin: 20px;
+}
+
+#infoContainer {
+  grid-column: 1;
+  background-color: white;
+}
+
+#cvContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 2;
+}
+
+#printButton {
+  display: flex;
+  justify-content: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.printer {
+  height: 3em;
+  width: 3em;
 }
 
 #page {
+  grid-column: 2;
   width: 210mm;
   height: 296mm;
   background-color: white;
@@ -91,6 +131,7 @@ body {
   font-size: 12pt;
   font-family: 'Computer Modern';
   text-align: justify;
+  line-height: 15pt;
 }
 
 .datePos {
@@ -116,6 +157,7 @@ body {
   font-family: 'Computer Modern';
   margin-left: 20px;
   list-style-type: decimal;
+  line-height: 15pt;
 }
 
 li {
@@ -126,11 +168,13 @@ li {
   display: flex;
   font-size: 12pt;
   font-family: 'Computer Modern';
+  line-height: 15pt;
 }
 
 .language {
   font-weight: bold;
   width: 80px;
+  line-height: 15pt;
 }
 
 .addEducation, .groupin{
@@ -148,8 +192,13 @@ li {
   margin-left: 3px;
 }
 
+.groupin {
+  line-height: 15pt;
+}
+
 .group {
   width: 150px;
   font-weight: bold;
+  line-height: 14pt;
 }
 
