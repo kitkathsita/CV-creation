@@ -1,13 +1,12 @@
 'use client'
 import React, { useState, useRef } from 'react';
-import TitlePage from './components/TitlePage';
 import SectionInfo from './components/SectionInfo';
+import SectionTitle from './components/SectionTitle';
 
 export default function CVInfo() {
   return (
     <div id='infoContainer'>
-      <TitlePage></TitlePage>
-      <SectionInfo></SectionInfo>
+      <SectionTitle sectionName={'Work experience'}></SectionTitle>
     </div>
   )
 }
