@@ -73,19 +73,29 @@ body {
   border-radius: 16px 16px;
   border: 1px;
   display: grid;
-  grid-template-columns: 6fr 1fr;
+  grid-template-columns: 7fr 1fr 1fr;
+  justify-items: right;
 }
 
 .WEInfo_ {
-  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+  grid-column: 1;
+  width: 100%;
 }
 
-.WeInfoIcons {
-  grid-column: 2 / 3;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  font-size: 3rem;
+.IconTrash {
+  grid-column: 2;
+  font-size: 1.8rem;
+  width: min-content;
+}
+
+.IconEdit {
+  grid-column: 3;
+  font-size: 1.8rem;
+  margin: 0%;
+  width: min-content;
 }
 
 /* PART OF THE CV */

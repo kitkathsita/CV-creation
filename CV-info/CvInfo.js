@@ -8,7 +8,7 @@ export default function CVInfo() {
   return (
     <div id='infoContainer'>
       <SectionTitle sectionName={'Work experience'}></SectionTitle>
-      <SectionWorkExperience position={'customer service agent'} company={'amazon'} date={'Oct 2022-Dec 2022'}></SectionWorkExperience>
+      <SectionWorkExperience position={'Customer Service Agent'} company={'Amazon'} date={'Oct 2022-Dec 2022'}></SectionWorkExperience>
     </div>
   )
 }
