@@ -47,7 +47,6 @@ body {
   display: flex;
   flex-direction: column;
   grid-column: 1;
-  background-color: white;
   margin-right: 20px;
   gap: 5px;
 }
@@ -58,23 +57,27 @@ body {
   font-size: 2rem;
   background-color: lightblue;
   border-radius: 16px 16px;
-  border: 1px;
+  border: solid 1px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.WEInfo {
+.InfoCont {
   padding: 10px;
   font-family: 'Computer Modern';
   font-size: 1.2rem;
   background-color: lightblue;
   border-radius: 16px 16px;
-  border: 1px;
+  border: solid 1px;
   display: grid;
-  grid-template-columns: 7fr 1fr 1fr;
+  grid-template-columns: 10fr 40px 40px;
   justify-items: right;
+}
+
+.WEInfo > div {
+  text-justify: distribute;
 }
 
 .WEInfo_ {
@@ -96,6 +99,19 @@ body {
   font-size: 1.8rem;
   margin: 0%;
   width: min-content;
+}
+
+.groupin2 {
+  line-height: 15pt;
+  display: flex;
+  font-size: 1.2rem;
+  font-family: 'Computer Modern';
+}
+
+.group2 {
+  width: 150px;
+  font-weight: bold;
+  line-height: 14pt;
 }
 
 /* PART OF THE CV */

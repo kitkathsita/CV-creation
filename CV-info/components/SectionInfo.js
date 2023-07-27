@@ -1,5 +1,13 @@
-export default function SectionInfo() {
+import { BsFillTrash3Fill, BsPencilSquare } from "react-icons/bs";
+
+export default function SectionInfo({ profile }) {
   return (
-    <div>Here comes the sections info</div>
+    <div className="InfoCont">
+      <div className="WEInfo_">
+      <div>{profile}</div>
+      </div>
+      <BsFillTrash3Fill className="IconTrash"/>
+      <BsPencilSquare className="IconEdit"/>
+    </div>
   )
 }

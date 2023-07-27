@@ -14,11 +14,10 @@ function Skills({ group, skills }) {
 	)
 }
 
-export default function SectionSkill({ sectionName, skills }) {
+export default function SectionSkill({ skills }) {
 	let i = 0
 	return (
 		<>
-			<div id="section">{sectionName}</div>
 			{
 				skills.map(skill => {
 					i++;

@@ -2,7 +2,7 @@ import { BsFillTrash3Fill, BsPencilSquare } from "react-icons/bs";
 
 export default function SectionWorkExperience({ position, company, date, description='', task=''}) {
   return (
-    <div className="WEInfo">
+    <div className="InfoCont">
       <div className="WEInfo_">
         <div>{position} - {company}</div>
         <div>{date}</div>
