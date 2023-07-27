@@ -1,7 +1,12 @@
+import { BsFillPlusSquareFill } from "react-icons/bs";
+
 export default function SectionTitle({ sectionName }) {
   return (
     <>
-      <h1 className="sectionName">{sectionName}</h1>
+      <div className="sectionName">
+        <h1>{sectionName}</h1>
+        <BsFillPlusSquareFill></BsFillPlusSquareFill>
+      </div>
     </>
   )
 }

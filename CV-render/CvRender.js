@@ -5,7 +5,7 @@ import Section from './components/Section';
 import '../app/globals.css';
 import Info from '../info.json';
 import ReactToPrint from "react-to-print";
-import { BsPrinter } from "react-icons/bs";
+import { BsPrinter, BsDownload } from "react-icons/bs";
 
 
 const sectionMock = ["PROFILE", 'WORK EXPERIENCE', 'LANGUAGES', 'EDUCATION', 'SKILLS'];
@@ -20,7 +20,7 @@ export default function CVRender() {
     <>
       <div id='cvContainer'>
         <ReactToPrint
-            trigger={() => <button id='printButton'><BsPrinter className='printer'></BsPrinter></button>}
+            trigger={() => <button id='printButton'><BsDownload className='printer'></BsDownload></button>}
             content={() => componentRef}
             />
         <div id='page' ref={(el) => (componentRef = el)}>
